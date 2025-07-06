@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: "Plain", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+#loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  padding: 18vh 7vw;
+}
+.line {
+  height: fit-content;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3vw;
+}
+#line-part1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  text-transform: uppercase;
+}
+#line-part1 h5,
+#line-part1 h6 {
+  font-size: 3vw;
+  font-family: "silk serif";
+  font-style: italic;
+  text-transform: uppercase;
+}
+#line-part1 h5 {
+  text-align: right;
+  width: 5vw;
+}
+.line h2 {
+  font-size: 6.5vw;
+  text-transform: uppercase;
+  animation: anime 2s;
+  -webkit-animation: anime 1s linear;
+  animation-iteration-count: infinite;
+}
+@keyframes anime {
+  0% {
+    color: transparent;
+    -webkit-text-stroke: 0.5px black;
+  }
+  100% {
+    font-style: italic;
+    color: transparent;
+    -webkit-text-stroke: 0.5px black;
+  }
+}
+
+.line h1 {
+  font-size: 6.5vw;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+#main {
+  position: relative;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+}
